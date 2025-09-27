@@ -1,0 +1,86 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #afb2bf;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 3px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000814;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #afb2bf;
+  border-radius: 10px;
+  visibility: hidden;
+}
+
+*:active::-webkit-scrollbar-thumb,
+*:focus::-webkit-scrollbar-thumb,
+*:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+input[type="password"]::-ms-reveal {
+  display: none;
+}
+input[type="password"]::-ms-clear {
+  display: none;
+}
+
+.form-style {
+  @apply rounded-lg bg-richblack-700 p-3 text-[16px] leading-[24px] text-richblack-5 shadow-[0_1px_0_0] shadow-white/50 placeholder:text-richblack-400 focus:outline-none;
+}
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-slide-in {
+  animation: fadeSlideIn 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+/* Target calendar scrollbar (for example, .rbc-calendar for react-big-calendar) */
+/* Scrollbar for month view container */
+.rbc-month-view::-webkit-scrollbar,
+.rbc-time-content::-webkit-scrollbar {
+  width: 12px; /* or more */
+}
+
+.rbc-month-view::-webkit-scrollbar-thumb,
+.rbc-time-content::-webkit-scrollbar-thumb {
+  background-color: #888; /* change to your desired color */
+  border-radius: 10px;
+}
+
+.rbc-month-view::-webkit-scrollbar-track,
+.rbc-time-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Firefox */
+.rbc-month-view,
+.rbc-time-content {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
