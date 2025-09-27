@@ -1,16 +1,28 @@
-# React + Vite
+## Event Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Event Management App is a web application designed to help users organize, manage, and track events efficiently. It provides features for event creation, attendee management, scheduling, and notifications.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/Mohammad-Ikhlas-khan/event-management-app.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd Event_Management
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm run dev
 
-## React Compiler
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend:** React.js, Tailwind CSS
+- **Authentication:** Firebase
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
